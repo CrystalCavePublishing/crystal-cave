@@ -1,0 +1,119 @@
+
+@media screen and (max-width: $breakpoint1){
+
+	$logo-height: 100px;
+	$logo-width: 100px;
+	$header-height: 500px;
+
+	#home-page-header {
+		width: 100%;
+		height: $header-height;
+
+		text-align: center;
+
+		#logo-container {
+			padding: 70px 0;
+			width: 100%;
+		}
+
+		#logo {
+			background-size: $logo-height $logo-width;
+			background-repeat: no-repeat;
+			height: $logo-height;
+			width: $logo-width; 
+			margin: 0 auto;
+		} 
+
+		#company-name {
+			margin-top: 1em;
+		} 
+
+		nav {
+			width: 100%;
+			ul {
+				display: flex;
+				justify-content: center;
+				li {
+					padding: 20px;
+					font-size: 1.25em;
+				}
+			}
+		}
+
+	}
+
+	#book-cover {
+		background-image: $cockroaches-cover;
+		height: 450px;
+		width: 300px;
+		background-size: 300px 450px;
+		margin: auto auto;
+	}
+}
+
+@media screen and (min-width: $breakpoint1 + 1){
+	$logo-height: 100px;
+	$logo-width: 100px;
+
+	#home-page-header {
+
+		text-align: center;
+
+		#logo-container {
+			padding: 70px 0;
+			width: 100%;
+		}
+
+		#logo {
+			background-size: $logo-height $logo-width;
+			background-repeat: no-repeat;
+			height: $logo-height;
+			width: $logo-width; 
+			margin: 0 auto;
+		} 
+
+		#company-name {
+			margin-top: 1em;
+		} 
+
+		nav {
+			width: 100%;
+			ul {
+				display: flex;
+				justify-content: left;
+				li {
+					padding: 20px;
+					font-size: 1.25em;
+				}
+			}
+		} 
+	}
+
+	#home-page {
+
+		#book-cover {
+			height: 450px;
+			width: 300px;
+			background-size: 300px 450px;
+			margin: auto auto;
+		}
+
+		.buy-buttons {
+			width: 400px;
+			margin: 50px auto;
+		}
+	}
+
+}
+
+#book-cover {
+	background-image: $cockroaches-cover;
+}
+
+#logo {
+	background-image: $logo-url; 
+}
+	.more-info {
+		text-align: center;
+	}
+

@@ -1,0 +1,70 @@
+
+/* from logo palette */
+$yellow-1: #fee25f; // logo yellow
+$yellow-2: #fdd600; // goldenrod-ish 
+$yellow-3: #e7b800; // dark yellow
+$pale-yellow: #fef2b6; // pale pastel yellow
+
+$purple-1: #7065ca; // logo purple
+$purple-2: #4434bb; // darker purple
+$purple-3: #1d00a9; // nighttime
+$pale-purple: #b3ade4; // pale
+
+$offwhite-yellow: #fffefa; // off-white
+$offwhite-purple: #eae9ef; // off-white
+
+$green-1: #5FB349;
+$green-2: #204935;
+$green-3: #69965C;
+
+$grey-1: #7A7B7C;
+$grey-2: #3A3B3C;
+$grey-3: #1d1e1e;
+
+/* gradient stuff */
+$texture-png: url('../assets/texture.png');
+
+$green-gradient: linear-gradient(to bottom, $green-1, $green-2);
+$green-gradient-with-texture: $texture-png, $green-gradient;
+
+$grey-gradient: linear-gradient(to bottom, $grey-2, $grey-3);
+$grey-gradient-with-texture: $texture-png, $grey-gradient; 
+
+$purple-gradient: linear-gradient(to bottom, $purple-1 0%,$purple-2 100%);
+$purple-gradient-with-texture: $texture-png, $purple-gradient;
+
+$pale-purple-glow: radial-gradient(ellipse at center, rgba(179,173,228,1) 0%, rgba(179,173,228,0) 60%);
+// $pale-purple-glow: radial-gradient(ellipse at center, rgba(179,173,228,.7) 0%, rgba(179,173,228,0) 60%);
+
+$yellow-gradient: linear-gradient(to bottom, $yellow-2 0%,$yellow-3 100%);
+$yellow-gradient-with-texture: $texture-png, $yellow-gradient;
+
+
+/* classes for headers */ 
+.pale-purple-glow {
+	background: $pale-purple-glow;
+}
+
+.purple-gradient { 
+	background-image: $purple-gradient-with-texture;
+	background-color: $purple-1;
+
+	color: #fff;
+	text-shadow: 0 3px 2px #444;
+}
+
+.yellow-gradient {
+	background-image: $yellow-gradient-with-texture;
+	background-color: $yellow-1;
+
+	color: black;
+	text-shadow: 0 2px 2px #888;
+}
+
+.green-gradient {
+	background-image: $green-gradient-with-texture;
+	background-color: $green-1;
+
+	color: white;
+	text-shadow: 0 3px 2px #444;
+}

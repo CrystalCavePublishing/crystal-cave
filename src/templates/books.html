@@ -1,0 +1,31 @@
+<header id="books-header" class="page-header yellow-gradient">
+
+  <ul class="small-top-nav">
+    <li class="small-nav-logo" ui-sref="home"></li>
+    <li class="small-nav-link" ui-sref="about">About</li>
+  </ul>
+
+  <h2> Our Books </h2>
+
+</header>
+
+<main id="books-page" class="bg-grey">
+
+  <ul class="books-list">
+    <li class="book-item" ng-repeat="book in ctrl.books">
+      <h4> {{ book.title }}</h4>
+      <img ng-show="book.coverSrc" ng-src="{{ book.coverSrc }}" class="book-list-cover"></figure>
+      <p ng-show="book.blurb" class="blurb"> {{ book.blurb }}</p>
+
+      <div ng-show="!!book.blurb && !!book.coverSrc" class="buy-buttons"> 
+        <button class="buy-button">Amazon</button>
+        <button class="buy-button">Nook</button>
+        <button class="buy-button"> ? </button> 
+      </div> 
+
+    </li> 
+  </ul>
+
+</main>
+
+<cc-footer></cc-footer>

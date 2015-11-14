@@ -1,0 +1,91 @@
+
+$breakpoint1: 450px;
+$breakpoint2: 1200px;
+
+header, main {
+	overflow: auto;
+}
+
+@media screen and (max-width: $breakpoint2){ 
+	header, main, footer {
+		padding: 0 50px;
+	}
+
+	.small-top-nav {
+		height: 50px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+
+		li {
+			margin: 5px 10px;
+		}
+
+		.small-nav-logo {
+			background-image: $logo-url;
+			background-size: 40px 40px;
+			height: 40px;
+			width: 40px;
+		}
+
+		.small-nav-link {
+		}
+	}
+
+}
+
+@media screen and (max-width: $breakpoint1){
+	header, main, footer {
+		padding: 0 0px;
+	}
+
+	body {
+		margin: 0;
+	}
+
+}
+
+.page-header {
+	text-align: center;
+}
+
+%basic-button {
+	border: 2px solid #888;
+	border-radius: 8px;
+}
+
+.buy-buttons {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.buy-button {
+	@extend %basic-button;
+	height: 50px;
+	min-width: 70px;
+	background-color: $green-1;
+	border-color: $green-3;
+	color: white;
+	font-size: .707em;
+	padding: 0px 10px;
+
+}
+
+.footer-list {
+	padding: 25px 0;
+	text-align: center;
+	background-image: $grey-gradient-with-texture;
+
+	a {
+		color: $grey-1;
+	}
+}
+
+@mixin group {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}

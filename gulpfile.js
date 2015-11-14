@@ -74,7 +74,7 @@ gulp.task('cleanvendor', function(cb){
     return stream;
 });
 gulp.task('cleantemplates', function(cb){
-    var stream = del(paths.build.build + '/templates.js');
+    var stream = del(paths.build.dir + '/templates.js');
     return stream;
 });
 
@@ -86,9 +86,10 @@ gulp.task('templates', ['cleantemplates'], function(){
 });
 
 /* WATCH */
-gulp.task('watch', function(){ 
+gulp.task('watch', function(){
     gulp.watch(paths.src.js, ['js']);
     gulp.watch(paths.src.sass, ['sass']);
+    gulp.watch(paths.src.templates, ['templates']);
 });
 
 gulp.task('default', [

@@ -1,0 +1,298 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700,400,100);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, and, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+del {
+  text-decoration: line-through; }
+
+hr {
+  background: transparent;
+  border: 0;
+  clear: both;
+  color: transparent;
+  height: 1px;
+  margin: 0;
+  padding: 0; }
+
+mark {
+  background-color: #ffffb3;
+  font-style: italic; }
+
+input, select {
+  vertical-align: middle; }
+
+ins {
+  background-color: red;
+  color: white;
+  text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* from logo palette */
+/* gradient stuff */
+/* classes for headers */
+.pale-purple-glow {
+  background: radial-gradient(ellipse at center, #b3ade4 0%, rgba(179, 173, 228, 0) 60%); }
+
+.purple-gradient {
+  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #7065ca 0%, #4434bb 100%);
+  background-color: #7065ca;
+  color: #fff;
+  text-shadow: 0 3px 2px #444; }
+
+.yellow-gradient {
+  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #fdd600 0%, #e7b800 100%);
+  background-color: #fee25f;
+  color: black;
+  text-shadow: 0 2px 2px #888; }
+
+.green-gradient {
+  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #5FB349, #204935);
+  background-color: #5FB349;
+  color: white;
+  text-shadow: 0 3px 2px #444; }
+
+html {
+  font-size: 1.125em; }
+
+body {
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em; }
+
+h2 {
+  font-size: 2.827em; }
+
+h3 {
+  font-size: 1.999em; }
+
+h4 {
+  font-size: 1.414em; }
+
+small, .font_small {
+  font-size: 0.707em; }
+
+.centered-text {
+  text-align: center; }
+
+.announcement {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0; }
+
+header, main {
+  overflow: auto; }
+
+@media screen and (max-width: 1200px) {
+  header, main, footer {
+    padding: 0 50px; }
+  .small-top-nav {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    .small-top-nav li {
+      margin: 5px 10px; }
+    .small-top-nav .small-nav-logo {
+      background-image: url("../assets/crystal-cave-logo.png");
+      background-size: 40px 40px;
+      height: 40px;
+      width: 40px; } }
+
+@media screen and (max-width: 450px) {
+  header, main, footer {
+    padding: 0 0px; }
+  body {
+    margin: 0; } }
+
+.page-header {
+  text-align: center; }
+
+.buy-button {
+  border: 2px solid #888;
+  border-radius: 8px; }
+
+.buy-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around; }
+
+.buy-button {
+  height: 50px;
+  min-width: 70px;
+  background-color: #5FB349;
+  border-color: #69965C;
+  color: white;
+  font-size: .707em;
+  padding: 0px 10px; }
+
+.footer-list {
+  padding: 25px 0;
+  text-align: center;
+  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #3A3B3C, #1d1e1e); }
+  .footer-list a {
+    color: #7A7B7C; }
+
+@media screen and (max-width: 450px) {
+  #home-page-header {
+    width: 100%;
+    height: 500px;
+    text-align: center; }
+    #home-page-header #logo-container {
+      padding: 70px 0;
+      width: 100%; }
+    #home-page-header #logo {
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+      margin: 0 auto; }
+    #home-page-header #company-name {
+      margin-top: 1em; }
+    #home-page-header nav {
+      width: 100%; }
+      #home-page-header nav ul {
+        display: flex;
+        justify-content: center; }
+        #home-page-header nav ul li {
+          padding: 20px;
+          font-size: 1.25em; }
+  #book-cover {
+    background-image: url("../assets/cockroaches-cover.png");
+    height: 450px;
+    width: 300px;
+    background-size: 300px 450px;
+    margin: auto auto; } }
+
+@media screen and (min-width: 451px) {
+  #home-page-header {
+    text-align: center; }
+    #home-page-header #logo-container {
+      padding: 70px 0;
+      width: 100%; }
+    #home-page-header #logo {
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+      margin: 0 auto; }
+    #home-page-header #company-name {
+      margin-top: 1em; }
+    #home-page-header nav {
+      width: 100%; }
+      #home-page-header nav ul {
+        display: flex;
+        justify-content: left; }
+        #home-page-header nav ul li {
+          padding: 20px;
+          font-size: 1.25em; }
+  #home-page #book-cover {
+    height: 450px;
+    width: 300px;
+    background-size: 300px 450px;
+    margin: auto auto; }
+  #home-page .buy-buttons {
+    width: 400px;
+    margin: 50px auto; } }
+
+#book-cover {
+  background-image: url("../assets/cockroaches-cover.png"); }
+
+#logo {
+  background-image: url("../assets/crystal-cave-logo.png"); }
+
+.more-info {
+  text-align: center; }
+
+@media screen and (max-width: 450px) {
+  #about-content figure {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 30px auto; } }
+
+@media screen and (min-width: 451px) {
+  #about-content figure, #about-content p {
+    float: left; }
+  #about-content figure {
+    width: 45%;
+    height: 400px;
+    border: 3px solid black;
+    margin: 50px auto; }
+  #about-content p {
+    width: 40%;
+    margin: 50px; } }
+
+@media screen and (max-width: 450px) {
+  #books-header {
+    height: 250px; }
+    #books-header h2 {
+      padding: 1.414em 0 0.5em;
+      margin: 0; }
+  .book-list-cover {
+    width: 100%; } }
+
+@media screen and (min-width: 451px) {
+  #books-page {
+    margin-bottom: 30px; }
+    #books-page img, #books-page p {
+      float: left;
+      margin: 30px 0; }
+    #books-page img {
+      margin-right: 30px;
+      width: 40%; }
+    #books-page p, #books-page .buy-buttons {
+      width: 55%; }
+    #books-page .book-item {
+      border-bottom: 1px solid #bbb; }
+      #books-page .book-item:after {
+        content: "";
+        display: block;
+        clear: both; } }

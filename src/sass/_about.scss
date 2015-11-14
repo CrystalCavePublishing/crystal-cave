@@ -1,0 +1,46 @@
+
+
+
+@media screen and (max-width: $breakpoint1){
+
+	$headshot-size: 300px;
+
+	#about-content {
+
+		figure {
+			height: $headshot-size;
+			width: $headshot-size;
+			border: 3px solid black;
+			margin: 30px auto;
+		}
+
+		p {
+
+		}
+
+	}
+}
+@media screen and (min-width: $breakpoint1 + 1px){
+
+	$headshot-size: 400px;
+
+	#about-content {
+
+		figure, p {
+			float: left;
+		}
+
+		figure {
+			width: 45%;
+			height: 400px;
+			border: 3px solid black;
+			margin: 50px auto;
+		}
+
+		p {
+			width: 40%;
+			margin: 50px;
+		}
+
+	}
+}
