@@ -73,7 +73,7 @@ a {
   text-shadow: 0 3px 2px #444; }
 
 .yellow-gradient {
-  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #fdd600 0%, #e7b800 100%);
+  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #fee25f 0%, #e7b800 100%);
   background-color: #fee25f;
   color: black;
   text-shadow: 0 2px 2px #888; }
@@ -130,7 +130,7 @@ small, .font_small {
 header, main {
   overflow: auto; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 451px) {
   header, main, footer {
     padding: 0 50px; }
   .small-top-nav {

@@ -6,7 +6,7 @@ header, main {
 	overflow: auto;
 }
 
-@media screen and (max-width: $breakpoint2){ 
+@media screen and (min-width: $breakpoint1 + 1){ 
 	header, main, footer {
 		padding: 0 50px;
 	}
