@@ -18,5 +18,7 @@ angular.module('crystalCave', ['templates', 'ui.router'])
         templateUrl: 'books.html' 
     });
 
+    $urlRouterProvider.otherwise('/');
+
 }]);
 
