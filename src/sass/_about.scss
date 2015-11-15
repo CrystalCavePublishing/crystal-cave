@@ -1,15 +1,17 @@
 
+$headshot-url: url('../assets/headshot.jpg');
+$headshot-size: 400px;
 
 
-@media screen and (max-width: $breakpoint1){
-
-	$headshot-size: 300px;
+@media screen and (max-width: 630px){
 
 	#about-content {
 
-		figure {
-			height: $headshot-size;
-			width: $headshot-size;
+		img {
+			display: block;
+			width: 80%;
+			max-width: $headshot-size;
+			height: auto;
 			border: 3px solid black;
 			margin: 30px auto;
 		}
@@ -20,27 +22,29 @@
 
 	}
 }
-@media screen and (min-width: $breakpoint1 + 1px){
+@media screen and (min-width: 631px){
 
-	$headshot-size: 400px;
 
 	#about-content {
+		display: flex;
+		justify-content: center;
 
-		figure, p {
+		img, p {
 			float: left;
 		}
 
-		figure {
-			width: 45%;
-			height: 400px;
+		img {
+			max-width: $headshot-size;
+			max-height: $headshot-size;
+			background-image: $headshot-url;
 			border: 3px solid black;
 			margin: 50px auto;
 		}
 
 		p {
-			width: 40%;
 			margin: 50px;
 		}
 
 	}
 }
+
