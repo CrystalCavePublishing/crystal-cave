@@ -6,31 +6,30 @@ header, main {
 	overflow: auto;
 }
 
+.small-top-nav {
+	height: 50px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+
+	li {
+		margin: 5px 10px;
+	}
+
+	.small-nav-logo {
+		background-image: $logo-url;
+		background-size: 40px 40px;
+		background-repeat: no-repeat;
+		background-position: center 2px;
+		height: 40px;
+		width: 40px;
+	}
+}
+
 @media screen and (min-width: $breakpoint1 + 1){ 
 	header, main, footer {
 		padding: 0 50px;
-	}
-
-	.small-top-nav {
-		height: 50px;
-		display: flex;
-		justify-content: left;
-		align-items: center;
-
-		li {
-			margin: 5px 10px;
-		}
-
-		.small-nav-logo {
-			background-image: $logo-url;
-			background-size: 40px 40px;
-			height: 40px;
-			width: 40px;
-		}
-
-		.small-nav-link {
-		}
-	}
+	} 
 
 }
 

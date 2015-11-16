@@ -16,6 +16,11 @@ angular.module('crystalCave', ['templates', 'ui.router'])
         url: '/books',
         controller: 'BooksCtrl as ctrl',
         templateUrl: 'books.html' 
+    })
+    .state('contact', {
+        url: '/contact',
+        controller: 'ContactCtrl as ctrl',
+        templateUrl: 'contact.html' 
     });
 
     $urlRouterProvider.otherwise('/');

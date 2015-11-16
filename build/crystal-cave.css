@@ -61,6 +61,9 @@ a {
   color: inherit; }
 
 /* from logo palette */
+/* from book cover */
+/* from compose.io website */
+/* other */
 /* gradient stuff */
 /* classes for headers */
 .pale-purple-glow {
@@ -81,6 +84,12 @@ a {
 .green-gradient {
   background-image: url("../assets/texture.png"), linear-gradient(to bottom, #5FB349, #204935);
   background-color: #5FB349;
+  color: white;
+  text-shadow: 0 3px 2px #444; }
+
+.red-gradient {
+  background-image: url("../assets/texture.png"), linear-gradient(to bottom, #ff8775 0%, #c20d00 77%, #c20d00 100%);
+  background-color: #ff8775;
   color: white;
   text-shadow: 0 3px 2px #444; }
 
@@ -130,21 +139,24 @@ small, .font_small {
 header, main {
   overflow: auto; }
 
+.small-top-nav {
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+  .small-top-nav li {
+    margin: 5px 10px; }
+  .small-top-nav .small-nav-logo {
+    background-image: url("../assets/crystal-cave-logo.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center 2px;
+    height: 40px;
+    width: 40px; }
+
 @media screen and (min-width: 451px) {
   header, main, footer {
-    padding: 0 50px; }
-  .small-top-nav {
-    height: 50px;
-    display: flex;
-    justify-content: left;
-    align-items: center; }
-    .small-top-nav li {
-      margin: 5px 10px; }
-    .small-top-nav .small-nav-logo {
-      background-image: url("../assets/crystal-cave-logo.png");
-      background-size: 40px 40px;
-      height: 40px;
-      width: 40px; } }
+    padding: 0 50px; } }
 
 @media screen and (max-width: 450px) {
   header, main, footer {
@@ -179,6 +191,18 @@ header, main {
   background-image: url("../assets/texture.png"), linear-gradient(to bottom, #3A3B3C, #1d1e1e); }
   .footer-list a {
     color: #7A7B7C; }
+
+@media screen and (min-width: 451px) {
+  .buy-button {
+    transition: all .5s ease-out; }
+    .buy-button:hover {
+      background-color: #7ec36c; }
+  .small-nav-link, .main-nav-link, .small-nav-logo {
+    transition: all .3s ease-out;
+    border-radius: 5px;
+    padding: 4px; }
+    .small-nav-link:hover, .main-nav-link:hover, .small-nav-logo:hover {
+      background-color: rgba(0, 0, 0, 0.1); } }
 
 @media screen and (max-width: 450px) {
   #home-page-header {
@@ -301,3 +325,38 @@ header, main {
         content: "";
         display: block;
         clear: both; } }
+
+#contact-list .contact-method {
+  height: 200px;
+  border: 1px solid #ddd; }
+  #contact-list .contact-method a {
+    text-align: center;
+    height: 100%;
+    line-height: 200px;
+    font-size: 1.5em;
+    display: block; }
+
+@media screen and (max-width: 450px) {
+  .contact-method {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    margin: 20px 0; } }
+
+@media screen and (min-width: 451px) {
+  #contact-list {
+    display: flex;
+    justify-content: center; }
+  .contact-method {
+    width: 200px;
+    transition: color .5s, background-color .5s;
+    margin: 50px 0; }
+    .contact-method:hover {
+      background-color: #7065ca;
+      color: #fff; }
+  .contact-method:first-child {
+    margin-right: 10%; }
+  #contact-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; } }

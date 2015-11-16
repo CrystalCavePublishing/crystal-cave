@@ -13,16 +13,25 @@ $pale-purple: #b3ade4; // pale
 $offwhite-yellow: #fffefa; // off-white
 $offwhite-purple: #eae9ef; // off-white
 
+/* from book cover */
 $green-1: #5FB349;
 $green-2: #204935;
 $green-3: #69965C;
 
+/* from compose.io website */
 $grey-1: #7A7B7C;
 $grey-2: #3A3B3C;
 $grey-3: #1d1e1e;
 
+/* other */
+$red-1: #ff8775;
+$red-2: #c20d00;
+
 /* gradient stuff */
 $texture-png: url('../assets/texture.png');
+
+$red-gradient: linear-gradient(to bottom, $red-1 0%, $red-2 77%, $red-2 100%);
+$red-gradient-with-texture: $texture-png, $red-gradient;
 
 $green-gradient: linear-gradient(to bottom, $green-1, $green-2);
 $green-gradient-with-texture: $texture-png, $green-gradient;
@@ -67,4 +76,13 @@ $yellow-gradient-with-texture: $texture-png, $yellow-gradient;
 
 	color: white;
 	text-shadow: 0 3px 2px #444;
+}
+
+.red-gradient {
+	background-image: $red-gradient-with-texture;
+	background-color: $red-1;
+
+	color: white;
+	text-shadow: 0 3px 2px #444;
+
 }

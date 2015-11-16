@@ -3,6 +3,8 @@ angular.module('crystalCave')
 })
 .controller('AboutCtrl', function(){
 })
+.controller('ContactCtrl', function(){
+})
 .controller('BooksCtrl', function(){
 
     this.books = [{

@@ -1,0 +1,20 @@
+
+@media screen and (min-width: $breakpoint1 + 1){
+
+	.buy-button {
+		transition: all .5s ease-out;
+		&:hover {
+			background-color: lighten($green-1, 10%);
+		}
+	}
+
+	.small-nav-link, .main-nav-link, .small-nav-logo {
+		transition: all .3s ease-out;	
+		border-radius: 5px;
+		padding: 4px;
+		&:hover {
+			background-color: rgba(0,0,0,.1);
+		}
+		
+	}
+}

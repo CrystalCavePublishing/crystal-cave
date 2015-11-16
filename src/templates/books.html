@@ -3,6 +3,7 @@
   <ul class="small-top-nav">
     <li class="small-nav-logo" ui-sref="home"></li>
     <li class="small-nav-link" ui-sref="about">About</li>
+    <li class="small-nav-link" ui-sref="contact">Contact</li>
   </ul>
 
   <h2> Our Books </h2>
@@ -18,9 +19,9 @@
       <p ng-show="book.blurb" class="blurb"> {{ book.blurb }}</p>
 
       <div ng-show="!!book.blurb && !!book.coverSrc" class="buy-buttons"> 
-        <button class="buy-button">Amazon</button>
-        <button class="buy-button">Nook</button>
-        <button class="buy-button"> ? </button> 
+        <button class="buy-button">Now on Amazon</button>
+        <!-- <button class="buy-button">Nook</button> -->
+        <!-- <button class="buy-button"> ? </button> --> 
       </div> 
 
     </li> 
