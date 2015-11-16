@@ -1,11 +1,13 @@
 angular.module('crystalCave')
 .controller('HomeCtrl', function(){
+    this.buylink = "http://www.amazon.com/Why-God-Do-Cockroaches-Fly-ebook/dp/B018055P1K/ref=sr_1_1?ie=UTF8&qid=1447639662&sr=8-1&keywords=why+god+why+do+cockroaches+fly";
 })
 .controller('AboutCtrl', function(){
 })
 .controller('ContactCtrl', function(){
 })
 .controller('BooksCtrl', function(){
+    this.buylink = "http://www.amazon.com/Why-God-Do-Cockroaches-Fly-ebook/dp/B018055P1K/ref=sr_1_1?ie=UTF8&qid=1447639662&sr=8-1&keywords=why+god+why+do+cockroaches+fly";
 
     this.books = [{
         title: "Why God Why Do Cockroaches Fly?",
